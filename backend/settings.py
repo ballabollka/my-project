@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-j9+@r6tl$6=ak6t_46demgmn0rl0+ipko1x3$zltlk%8ei@u&2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['my-project-iygd.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'my-project-iygd.onrender.com']
 
 
 # Application definition
@@ -133,7 +133,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://programmschool.netlify.app'
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 
 REST_FRAMEWORK = {
