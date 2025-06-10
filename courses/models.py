@@ -12,7 +12,9 @@ class Course(models.Model):
     lesson_time = models.CharField(max_length=50)  # например: "30 минут"
     description = models.TextField()
     age_group = models.CharField(max_length=10, choices=AGE_GROUPS)
-    image_url = models.URLField(blank=True)  # ссылка на иконку, если надо
+    image_url = models.URLField(blank=True)  
+    program = models.JSONField(default=list)  # список тем курса
+    price = models.IntegerField(default=0)    # цена в рублях
 
     def __str__(self):
         return self.title
